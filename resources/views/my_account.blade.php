@@ -16,8 +16,8 @@
               <div class="row">
                 <div class="col-md-3"><img src="assets/images/logout.png" alt="" title="" class="img-fluid"></div>
                 <div class="col-md-9">
-                  <p class="user-name"><span class="text-danger">{{ Auth::user()->name }}</span></p>
-                  <p>( not {{ Auth::user()->name }} ? <a href="{{ url('/logout') }}">Log Out</a>)</p>
+                  <p class="user-name"><span class="text-danger">{{ Auth::user()->userName }}</span></p>
+                  <p>( not {{ Auth::user()->userName }} ? <a href="{{ url('/logout') }}">Log Out</a>)</p>
                 </div>
               </div>
             </div>

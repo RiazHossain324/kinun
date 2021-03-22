@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\NavController;
+use App\Http\Controllers\CategoryController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -26,3 +27,12 @@ Auth::routes();
 
 Route::get('/dashboard', [App\Http\Controllers\AdminController::class, 'dashboard'])->name('dashboard');
 Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
+
+
+
+Route::get('/edit-categories', [NavController::class, "editCategory"]);
+
+Route::get('/categories', [NavController::class, "category"]);
+
+Route::post('/categories', [CategoryController::class, 'addCategory']);
+Route::get('/categories', [CategoryController::class, 'show']);

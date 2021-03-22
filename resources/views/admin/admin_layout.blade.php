@@ -300,14 +300,20 @@
                         <li><a class="waves-effect waves-dark" href="ecommerce-product-list.html"> <i
                                     class="ti-angle-right"></i> <span class="hide-menu">Products Catalogue</span></a>
                         </li>
+                        <li><a class="waves-effect waves-dark" href="{{ url('/categories') }}"> <i
+                                    class="ti-angle-right"></i> <span class="hide-menu">Product Categories</span></a>
+                        </li>
                         <li><a class="waves-effect waves-dark" href="ecommerce-pro-list.html"> <i
                                     class="ti-angle-right"></i> <span class="hide-menu">Product List - List view
                                 </span></a></li>
                         <li><a class="waves-effect waves-dark" href="ecommerce-products-catalogue.html"> <i
                                     class="ti-angle-right"></i> <span class="hide-menu">Product List - grid view
                                 </span></a></li>
-                        <li><a class="waves-effect waves-dark" href="ecommerce-products-details.html"> <i
+                        <li><a class="waves-effect waves-dark" href="#"> <i
                                     class="ti-angle-right"></i> <span class="hide-menu">Product Details</span></a></li>
+                        <li><a class="waves-effect waves-dark" href="{{ url('/edit-categories') }}"> <i
+                                    class="ti-angle-right"></i> <span class="hide-menu">Edit Categories</span></a>
+                        </li>
                         <li><a class="waves-effect waves-dark" href="ecommerce-add-edit-products.html"> <i
                                     class="ti-angle-right"></i> <span class="hide-menu">Add/Edit Products</span></a>
                         </li>

@@ -118,7 +118,7 @@
                                                     aria-hidden="true"></i></a>
                                             <div class="dropdown-menu dropdown-menu-right animate slideIn">
                                                 <a class="dropdown-item" href="{{ url('/login') }}">Login</a>
-                                                <a class="dropdown-item" href="my-account.html">My Account</a>
+                                                <a class="dropdown-item" href="{{ url('my-account') }}">My Account</a>
                                                 <a class="dropdown-item" href="{{ url('/register') }}">Register</a>
                                                 <a class="dropdown-item" href="forgot-password.html">Forgot Password</a>
                                                 <a class="dropdown-item" href="{{ url('/logout') }}">Logout</a>
@@ -274,7 +274,7 @@
                                     <a class="dropdown-item" href="forgot-password.html">Forgot Password</a>
                                 @endguest
                                 @auth
-                                    <a class="dropdown-item" href="my-account.html">My Account</a>
+                                    <a class="dropdown-item" href="{{ url('my-account') }}">My Account</a>
                                     <a class="dropdown-item" href="{{ url('/logout') }}">Logout</a>
                                 @endauth
                             </div>
@@ -364,7 +364,7 @@
                     <p class="m-0">Get E-mail updates about our latest shop and special offers.</p>
                 </div>
                 <div class="col-md-5">
-                    <form action="http://www.creativethemes.co.in/" method="post" id="subsForm"
+                    <form action="#" method="post" id="subsForm"
                         onSubmit="return ajaxmailsubscribe();">
                         <div class="input-group">
                             <input type="email" name="subsemail" id="subsemail" class="form-control newsletter"

@@ -30,5 +30,13 @@ class NavController extends Controller
         return view("my_account");
     }
 
+    public function category(){
+        return view("admin.category.category");
+    }
+
+    public function editCategory(){
+        return view("admin.category.edit_category");
+    }
+
 
 }
