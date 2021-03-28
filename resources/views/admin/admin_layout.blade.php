@@ -353,7 +353,12 @@
     <!-- ============================================================== -->
     <!-- All Jquery -->
     <!-- ============================================================== -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" rel="stylesheet">
+
     <script src="../assets/vendors/jquery/jquery.min.js"></script>
+
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
     <!-- Bootstrap popper Core JavaScript -->
     <script src="../assets/vendors/bootstrap/js/popper.min.js"></script>
     <script src="../assets/vendors/bootstrap/js/bootstrap.min.js"></script>
