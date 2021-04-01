@@ -29,9 +29,6 @@ Route::get('/dashboard', [App\Http\Controllers\AdminController::class, 'dashboar
 Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
 
 
-
-Route::get('/edit-categories', [NavController::class, "editCategory"]);
-
 Route::get('/categories', [NavController::class, "category"]);
 
 Route::post('/categories', [CategoryController::class, 'addCategory']);

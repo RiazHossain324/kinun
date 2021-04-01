@@ -9,14 +9,6 @@ use Illuminate\Support\Facades\Validator;
 
 class CategoryController extends Controller
 {
-    // public function addCategory(Request $req)
-    // {
-    //     $category = new Categorie;
-    //     $category->category=$req->category;
-    //     $category->save();
-    //     return redirect()->back();
-    // }
-
     public function addCategory(Request $request)
     {
         $validator = Validator::make($request->all(), [
@@ -41,6 +33,10 @@ class CategoryController extends Controller
     public function show(){
         $data = Categorie::all();
         return view('admin.category.category', ['categorys' => $data]);
+    }
+
+    public function homecategory(){
+
     }
 
 
